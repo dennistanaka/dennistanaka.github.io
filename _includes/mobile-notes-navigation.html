@@ -1,0 +1,18 @@
+<nav class="mobile-notes-navigation">
+  <div class="nav-wrapper">
+    <a href="#" data-target="mobile-notes-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <span>NOTES INDEX</span>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-notes-sidenav">
+  {%- for section in site.data.notes -%}
+    <h3 class="section-title">{{ section.title }}</h3>
+    {%- for item in section.notes -%}
+      {%- assign item_url = item | prepend:"/notes/" | append:"/" -%}
+      {%- assign note = site.notes | where:"url", item_url | first -%}
+      {%- assign note_url = note.url | prepend: site.baseurl -%}
+      <li class="section-item {% if note.url == page.url %}current{% endif %}"><a href="{{ note_url }}">{{ note.menu_title }}</a></li>
+    {%- endfor -%}
+  {%- endfor -%}
+</ul>

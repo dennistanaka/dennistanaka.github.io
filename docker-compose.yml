@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_ID: ${HOST_UID:-0}
+        GROUP_ID: ${HOST_GID:-0}
+    command: /bin/bash -c "bundle install;
+                           bundle exec jekyll serve --host 0.0.0.0 --port 8080"
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      - bundle-volume:/home/appuser/.local/bundle
+    ports:
+      - "8080:8080"
+volumes:
+  bundle-volume:
+    driver: local

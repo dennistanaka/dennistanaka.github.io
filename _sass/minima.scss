@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$head-font-family: "Noto Sans", -apple-system, ".SFNSText-Regular", BlinkMacSystemFont, "San Francisco", "Roboto", "Segoe UI", "Ubuntu", "Cantarell", "Oxygen", "Fira Sans", "Helvetica Neue", "Droid Sans", "Lucida Grande", sans-serif !default;
+$base-font-family: "Source Serif Pro", "Times", "Noto Serif", "Georgia", "Droid Serif", "Times New Roman", serif !default;
+$code-font-family: "Roboto Mono", "Monaco", "Consolas", "Ubuntu Mono", "Oxygen Mono", "Fira Mono", "Menlo", "Droid Sans Mono", "Lucida Console", monospace !default;
+$base-font-size:   18px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #2d3748 !default;
+$background-color: #ffffff !default;
+$a-color:          darken(#66d9ef, 20%) !default;
+$a-color-visited:  darken(#66d9ef, 35%) !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color-dark:  #2d3748 !default;
+$grey-color:       lighten($grey-color-dark, 25%) !default;
+$grey-color-light: lighten($grey-color, 45%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    1200px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "notes-navigation",
+  "monokai"
+;

@@ -1,0 +1,300 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+@import "materialize";
+
+h1 {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $head-font-family;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: $a-color;
+
+  &:hover {
+    color: $a-color;
+  }
+
+  &:visited {
+    color: $a-color-visited;
+  }
+}
+
+figure {
+  margin: 1em 0;
+}
+
+nav {
+  color: $text-color;
+  background-color: $background-color;
+  @extend .z-depth-0;
+
+  a { color: $text-color; }
+
+  .sidenav-trigger {
+    margin: 0;
+    margin-right: 12px;
+  }
+}
+
+pre {
+  border-radius: 7px;
+
+  code {
+    border-radius: 3px;
+  }
+}
+
+code {
+  @include relative-font-size(0.7775);
+  background-color: $accent-bg-color;
+  font-family: $code-font-family;
+
+  .c {
+    display: inline-block;
+  }
+}
+
+.site-header {
+  margin-bottom: $spacing-unit;
+
+  a {
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
+.page-content {
+  padding: 0;
+}
+
+.site-title {
+  float: none;
+  text-align: center;
+  font-family: $head-font-family;
+  font-size: 1.8rem;
+
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+}
+
+.sub-title {
+  color: $grey-color;
+  text-align: center;
+  font-family: $head-font-family;
+  font-size: 1rem;
+
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+}
+
+.site-nav {
+  float: none;
+  text-align: center;
+
+  .page-link {
+    font-family: $head-font-family;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: $spacing-unit * 2;
+    }
+  }
+
+  @include media-query($on-palm) {
+    float: right;
+    text-align: left;
+    z-index: 2;
+
+    .page-link {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+.site-footer {
+  margin-top: $spacing-unit;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-column-gap: $spacing-unit;
+  grid-row-gap: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+  width:         calc(30% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         calc(25% - (#{$spacing-unit} / 2));
+}
+
+.contact-list {
+  list-style-position: inside;
+}
+
+.social-media-list {
+  list-style-position: inside;
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+.svg-icon {
+  width: 24px;
+}
+
+.notes-navigation {
+  margin-top: -12px;
+
+  a { color: $text-color; }
+
+  li {
+    margin-left: $spacing-unit / 2;
+  }
+
+  .current {
+    text-decoration: underline;
+  }
+
+  @include media-query($on-laptop) {
+    display: none;
+  }
+}
+
+.mobile-notes-navigation {
+  display: none;
+  font-family: "Noto Sans";
+
+  @include media-query($on-laptop) {
+    display: block;
+    border-bottom: 1px solid $grey-color-light;
+  }
+}
+
+.sidenav {
+  display: none;
+
+  .section-item {
+    margin-left: $spacing-unit;
+  }
+
+  @include media-query($on-laptop) {
+    display: block;
+
+    .section-title {
+      margin-left: $spacing-unit;
+    }
+
+    .section-item {
+      list-style-type: none;
+      margin-left: $spacing-unit / 2;
+
+      a {
+        font-family: "Noto Sans";
+        font-size: 1rem;
+      }
+    }
+
+    .current {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+.post-content {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.post-list-heading {
+  font-size: 1.8rem;
+}
+
+.post-list {
+  list-style-position: inside;
+}
+
+.post-link {
+  font-size: 1.5rem;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: 256px minmax(auto, 912px);
+
+  @include media-query($on-laptop) {
+    display: block;
+    margin-top: -$spacing-unit;
+  }
+}
+
+.note {
+  padding-left: $spacing-unit;
+  border-left: 1px solid $grey-color-light;
+
+  @include media-query($on-laptop) {
+    margin-top: $spacing-unit;
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}

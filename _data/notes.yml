@@ -1,0 +1,32 @@
+- title: Cheat Sheets
+  notes:
+    - cheatsheets/command_line
+    - cheatsheets/curl
+    - cheatsheets/package_management
+    - cheatsheets/git
+- title: Tools
+  notes:
+    - tools/toolbox
+    - tools/code_editors
+    - tools/boilerplates
+    - tools/hosting
+- title: Docker
+  notes:
+    - docker/cheatsheet
+    - docker/basics
+- title: Guidelines
+  notes:
+    - guidelines/apis
+    - guidelines/css
+- title: JavaScript
+  notes:
+    - javascript/concepts
+    - javascript/datetime
+    - javascript/formatting
+- title: CSS
+  notes:
+    - css/sass
+    - css/bootstrap
+- title: Databases
+  notes:
+    - databases/mysql

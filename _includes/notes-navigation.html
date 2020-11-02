@@ -1,0 +1,13 @@
+<sidebar class="notes-navigation">
+  <ul>
+    {%- for section in site.data.notes -%}
+      <h3 class="section-title">{{ section.title }}</h3>
+      {%- for item in section.notes -%}
+        {%- assign item_url = item | prepend:"/notes/" | append:"/" -%}
+        {%- assign note = site.notes | where:"url", item_url | first -%}
+        {%- assign note_url = note.url | prepend: site.baseurl -%}
+        <li class="{% if note.url == page.url %}current{% endif %}"><a href="{{ note_url }}">{{ note.menu_title }}</a></li>
+      {%- endfor -%}
+    {%- endfor -%}
+  </ul>
+</sidebar>
