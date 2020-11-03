@@ -17,7 +17,7 @@ $ lsof -i :<port_number>
 $ lsof -i tcp:<port_number>
 ```
 
-Source: https://www.howtogeek.com/426031/how-to-use-the-linux-lsof-command/
+<span class="info-source">Source: [https://www.howtogeek.com/426031/how-to-use-the-linux-lsof-command/](https://www.howtogeek.com/426031/how-to-use-the-linux-lsof-command/)</span>
 
 ## Base64 Encoding and Decoding
 
@@ -45,7 +45,7 @@ If the line has already been written to $HISTFILE, we need to update it. Otherwi
 $ history -w
 ```
 
-Source: https://unix.stackexchange.com/questions/49214/how-to-remove-a-single-line-from-history
+<span class="info-source">Source: [https://unix.stackexchange.com/questions/49214/how-to-remove-a-single-line-from-history](https://unix.stackexchange.com/questions/49214/how-to-remove-a-single-line-from-history)</span>
 
 ## Prevent Commands to Appear in Bash History
 
@@ -59,7 +59,7 @@ So, it's usually safe to set it to `ignoreboth`:
 export HISTCONTROL=ignoreboth
 ```
 
-Source: https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history
+<span class="info-source">Source: [https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history](https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history)</span>
 
 ## Count Number of Lines in File or Command Output
 
@@ -83,4 +83,4 @@ Counting the lines in a command output:
 $ git clean -n | wc -l
 ```
 
-Source: https://www.tecmint.com/wc-command-examples/
+<span class="info-source">Source: [https://www.tecmint.com/wc-command-examples/](https://www.tecmint.com/wc-command-examples/)</span>
