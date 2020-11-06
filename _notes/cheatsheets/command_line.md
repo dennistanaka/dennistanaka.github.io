@@ -8,6 +8,30 @@ permalink: /notes/cheatsheets/command_line/
 * TOC
 {:toc}
 
+## tmux Shortcuts
+
+Prefix key (Ctrl + b) + command keys below:
+
+```
+$           Rename the current session.
+(           Switch the attached client to the previous session.
+)           Switch the attached client to the next session.
+d           Detach the current client.
+
+c           Create a new window.
+l           Move to the previously selected window.
+n           Change to the next window.
+0 to 9      Select windows 0 to 9.
+
+Up, Down
+Left, Right Change to the pane above, below, to the left, or to the right of the current pane.
+"           Split the current pane into two, top and bottom.
+%           Split the current pane into two, left and right.
+!           Break the current pane out of the window.
+```
+
+<span class="info-source">Source: `man tmux`</span>
+
 ## Find the Process Allocating a Specific Port
 
 ```bash
