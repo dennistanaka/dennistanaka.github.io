@@ -57,7 +57,7 @@ $ grep test /home/ubuntu/*.sh
 $ grep -B 5 -A 5 test /home/ubuntu
 ```
 
-<span class="info-source">[https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)</span>
+<span class="info-source">Source: [https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)</span>
 
 ### Exclude Folders from Recursive Search
 
@@ -66,7 +66,7 @@ $ grep -r --exclude-dir=node_modules test app
 $ grep -r --exclude-dir={node_modules,vendor} test app
 ```
 
-<span class="info-source">[https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r](https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r)</span>
+<span class="info-source">Source: [https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r](https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r)</span>
 
 ## Count Lines in File or Command Output
 

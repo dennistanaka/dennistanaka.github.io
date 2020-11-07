@@ -46,7 +46,7 @@ If we also add the options above, it would become something as:
 mysqldump -u [username] -p --single-transaction --opt [database_name] > [filename].sql
 {% endhighlight %}
 
-## Restore
+### Restore
 
 We can restore a previously created database file by using the `mysql` command:
 

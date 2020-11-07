@@ -118,7 +118,7 @@ permalink: /notes/css/bootstrap/
 }
 {% endhighlight %}
 
-## Media Query - Maximum Width
+## Media Query - Maximum Widths
 
 {% highlight css %}
 // Extra small devices (portrait phones, less than 576px)
@@ -189,4 +189,4 @@ Usage:
 @include media-breakpoint-between(md, xl) { ... }
 {% endhighlight %}
 
-Source: [Bootstrap Documentation](https://getbootstrap.com/docs/4.2/layout/grid/)
+<span class="info-source">Source: [https://getbootstrap.com/docs/4.2/layout/grid/](https://getbootstrap.com/docs/4.2/layout/grid/)</span>

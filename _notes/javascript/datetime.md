@@ -16,5 +16,4 @@ const currentTime = moment();
 const diff = currentTime.diff(startTime, 'seconds');
 {% endhighlight %}
 
-Source: [StackOverflow](https://stackoverflow.com/questions/1197928/how-to-add-30-minutes-to-a-javascript-date-object)<br />
-Source: [Moment.js](http://momentjs.com/)
+<span class="info-source">Source: [https://momentjs.com/docs/#/displaying/difference/](https://momentjs.com/docs/#/displaying/difference/)</span>

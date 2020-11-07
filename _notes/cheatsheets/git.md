@@ -16,7 +16,7 @@ $ git config --global user.name "YOUR NAME"
 $ git config --global user.email "YOUR@EMAIL.com"
 ```
 
-Source: https://gorails.com/setup/ubuntu/20.04
+<span class="info-source">Source: [https://gorails.com/setup/ubuntu/20.04](https://gorails.com/setup/ubuntu/20.04)</span>
 
 ## Display Branch in Terminal
 
@@ -32,7 +32,7 @@ parse_git_branch() {
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 ```
 
-Source: https://gist.github.com/joseluisq/1e96c54fa4e1e5647940
+<span class="info-source">Source: [https://gist.github.com/joseluisq/1e96c54fa4e1e5647940](https://gist.github.com/joseluisq/1e96c54fa4e1e5647940)</span>
 
 ## Delete a File from a Git Repository
 
@@ -41,15 +41,15 @@ $ git rm path_to_file_to_delete
 $ git commit -m 'Remove file_to_delete'
 ```
 
-Source: https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-git-repo
+<span class="info-source">Source: [https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-git-repo](https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-git-repo)</span>
 
-## Empty Commit 
+## Empty Commit
 
 ```shell
 $ git commit --allow-empty -m "This is an empty commit"
 ```
 
-Source: https://coderwall.com/p/vkdekq/git-commit-allow-empty
+<span class="info-source">Source: [https://coderwall.com/p/vkdekq/git-commit-allow-empty](https://coderwall.com/p/vkdekq/git-commit-allow-empty)</span>
 
 ## Set Up a Local Branch to Track a Remote One
 
@@ -59,7 +59,7 @@ Affects the currently checked out branch.
 $ git branch -u origin/branch_name_on_remote
 ```
 
-Source: https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch
+<span class="info-source">Source: [https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch](https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch)</span>
 
 ## Delete a Local Branch
 
@@ -67,7 +67,7 @@ Source: https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch
 $ git branch -d local_branch_name
 ```
 
-Source: https://www.git-tower.com/learn/git/faq/delete-remote-branch
+<span class="info-source">Source: [https://www.git-tower.com/learn/git/faq/delete-remote-branch](https://www.git-tower.com/learn/git/faq/delete-remote-branch)</span>
 
 ## Remove Untracked Files
 
@@ -102,4 +102,4 @@ Lastly, `-i` can be used to the process interactively:
 $ git clean -d -i
 ```
 
-Source: https://linuxize.com/post/how-to-remove-untracked-files-in-git/
+<span class="info-source">Source: [https://linuxize.com/post/how-to-remove-untracked-files-in-git/](https://linuxize.com/post/how-to-remove-untracked-files-in-git/)</span>

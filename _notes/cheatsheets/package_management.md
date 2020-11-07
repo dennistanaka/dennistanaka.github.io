@@ -19,7 +19,7 @@ un  qemu-system-x86-64     <none>           <none>       (no description availab
 ii  qemu-utils             1:4.2-3ubuntu6.6 amd64        QEMU utilities
 ```
 
-un: not installed
+un: not installed<br>
 ii: installed
 
 ## Homebrew

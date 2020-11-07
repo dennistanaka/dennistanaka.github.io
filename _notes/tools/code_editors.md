@@ -90,7 +90,7 @@ It may be necessary to create the `~/.vimrc` file if it is not created by defaul
 :autocmd Filetype ruby set ww+=<,>
 ```
 
-Source: [Vim Commands Cheat Sheet](https://www.fprintf.net/vimCheatSheet.html)
+<span class="info-source">Source: [https://www.fprintf.net/vimCheatSheet.html](https://www.fprintf.net/vimCheatSheet.html)</span>
 
 ### Initial Setup
 
