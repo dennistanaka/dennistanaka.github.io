@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "Progressive Web Apps - Part 1"
-date:   2019-02-19 23:50:27 +0900
+layout:    post
+title:     "Progressive Web Apps - Part 1"
+date:      2019-02-19 23:50:27 +0900
+published: false
 ---
 
 # Introduction

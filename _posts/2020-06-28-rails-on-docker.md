@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "Ruby on Rails Development Environment on Docker"
-date:   2020-06-28 20:33:48 +0900
+layout:    post
+title:     "Ruby on Rails Development Environment on Docker"
+date:      2020-06-28 20:33:48 +0900
+published: false
 ---
 
 <h4>Table of Contents</h4>
@@ -398,7 +399,7 @@ This is my annotations on how to create a Ruby on Rails development environment 
 
 # Prerequisites
 
-You need to have Docker Desktop on Windows installed. You can get it from the [Docker website](https://hub.docker.com/editions/community/docker-ce-desktop-windows). 
+You need to have Docker Desktop on Windows installed. You can get it from the [Docker website](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 # Preparation
 

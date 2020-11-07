@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "Progressive Web Apps - Part 2"
-date:   2019-02-24 13:50:32 +0900
+layout:    post
+title:     "Progressive Web Apps - Part 2"
+date:      2019-02-24 13:50:32 +0900
+published: false
 ---
 
 # Introduction
@@ -170,7 +171,7 @@ self.addEventListener('fetch', e => {
 })
 {% endhighlight %}
 
-The method `e.respondWith` allow us to customize how to respond to each fetch event. For now, it was just placed here to call attention to it as we are not doing any manipulation. 
+The method `e.respondWith` allow us to customize how to respond to each fetch event. For now, it was just placed here to call attention to it as we are not doing any manipulation.
 
 # Conclusion
 
