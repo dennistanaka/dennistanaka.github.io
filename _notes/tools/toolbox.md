@@ -19,6 +19,49 @@ permalink: /notes/tools/toolbox/
   * Extensions:
     * [Sync Settings]()
 
+# Code Snippets - Lepton
+
+To manage code snippets, I'm currently using an app called [Lepton](https://github.com/hackjutsu/Lepton). It has been fulfilling my needs since I just wanted a bit user-friendlier interface to manage my GitHub gists and that's exactly what it is.
+
+## Installation on Linux
+
+Install Snap:
+
+```bash
+$ sudo apt install snapd
+```
+
+Restart the system and install the Snap Store:
+
+```bash
+$ sudo snap install snap-store
+```
+
+Install Lepton through the Snap Store.
+
+<span class="source-info">Source: [https://snapcraft.io/docs/installing-snap-store-app](https://snapcraft.io/docs/installing-snap-store-app)</span>
+
+## Config
+
+The `.leptonrc` config file is usually created on `~/` but, when installing as a snap, we need to place it in `~/snap/lepton/current` instead.
+
+For now, I'm using the following configuration. I'd like to use the dark theme, but I think the light theme is more readable as of now.
+
+```json
+{
+  "theme": "light",
+  "snippet": {
+    "expanded": false,
+    "newSnippetPrivate": true
+  }
+}
+```
+
+## Note on Mac and Windows
+
+On Mac and Windows, it's pretty much usual installation. It's just that the developer is not registered as a verified developer on both platforms, so it's necessary to ignore the warnings and proceed with the installation anyway.
+
+
 # Linux - Pop!_OS
 
 For my personal projects, especially Docker related, I mainly use Linux on a virtual machine on a Windows 10 host.
@@ -29,7 +72,7 @@ I used to use Ubuntu, but have recently switched to Pop!_OS. Although it uses Ub
 
 ## On the Laptop
 
-I use my laptop less frequently than my desktop, but I decided to install Pop_OS! on it as well, keeping a dual-boot configuration with Windows 10. 
+I use my laptop less frequently than my desktop, but I decided to install Pop_OS! on it as well, keeping a dual-boot configuration with Windows 10.
 
 In the official instruction below, Windows is installed after Pop_OS!. As my laptop was almost at a clear-install state, I decided to follow these instructions as-is.
 
