@@ -10,7 +10,7 @@ date:   2020-11-07 15:00:57 +0900
 
 # Introduction
 
-Currently, I'm trying to use virtual machines and containers as much as possible. But, as I use multiple devices, I wanted to be able to manage those virtual machines easily from any of those machines. My idea was to use a laptop I had laying around for that purpose, so I started researching about the options I had and there were a couple of interesting options such as VMware, Proxmox and oVirt. I ultimately decided to use [Cockpit](https://cockpit-project.org/) to manage KVM virtual machines on the host. Cockpit is a web-based interface to manage servers, not a virtualization focused application like the mentioned options, but it has a module for VM management.
+Currently, I'm trying to use virtual machines and containers as much as possible. But, as I use multiple devices, I wanted to be able to manage those virtual machines easily from any of those machines. My idea was to use a laptop I had laying around for that purpose, so I started researching about the options I had and there were a couple of interesting options such as VMware, Proxmox and oVirt. I ultimately decided to use [Cockpit][cockpit-url] to manage KVM virtual machines on the host. Cockpit is a web-based interface to manage servers, not a virtualization focused application like the mentioned options, but it has a module for VM management.
 
 There's not a strong reason for that choice and I may test the other options in the future. It's just that it seemed faster to start using it since I already had Pop_OS! installed on the laptop and I decided to install Cockpit on top of that. I knew it lacks a lot in terms of features compared to the other options, but I thought it was OK because this was my first experience with KVM. I knew what KVM is and was interested in trying it out, so I thought it would good to have to do things manually whenever Cockpit didn't support something I'd like to do.
 
@@ -153,3 +153,5 @@ That said, it seems enough for my home usage. It's nice to be able to have a gla
 * [https://computingforgeeks.com/how-to-install-cockpit-on-ubuntu-18-04-debian-9/](https://computingforgeeks.com/how-to-install-cockpit-on-ubuntu-18-04-debian-9/)
 * [https://cockpit-project.org/guide/latest/feature-virtualmachines](https://cockpit-project.org/guide/latest/feature-virtualmachines)
 * [htps://www.redhat.com/en/blog/managing-virtual-machines-rhel-8-web-console](htps://www.redhat.com/en/blog/managing-virtual-machines-rhel-8-web-console)
+
+[cockpit-url]: https://cockpit-project.org/
