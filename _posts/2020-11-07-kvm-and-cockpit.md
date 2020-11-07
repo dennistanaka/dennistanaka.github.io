@@ -111,11 +111,11 @@ The corresponding service should be started after the installation and we can co
 $ systemctl status cockpit
 ```
 
-Compared to the Ubuntu KVM installation tutorial, this procedure didn't install the `bridge-utils` package which I may install later to allow virtual machines to access the local network directly.
+Compared to the [Ubuntu KVM installation tutorial][ubuntu-kvm-tutorial], this procedure didn't install the `bridge-utils` package which I may install later to allow virtual machines to access the local network directly.
 
 That same tutorial also mentions the need to add the user to the `libvirtd` group, but it was already done after the installation without me having to do anything.
 
-I could also have installed "Virt-Manager" that seems to be a much more feature-rich than the Cockpit's VM management module. Although Red Hat is recommending the use of Cockpit instead of Virt-Manager, it's still under development.
+I could also have installed Virt-Manager that seems to be a much more feature-rich than the Cockpit's VM management module. Although Red Hat is recommending the use of Cockpit instead of Virt-Manager, it's still under development.
 
 But, for now, I will stick to using Cockpit because, as I said before, I'm interested in doing everything Cockpit doesn't support manually, through the command-line.
 
@@ -129,17 +129,17 @@ Naturally, the browser will display a certification warning that can be safely s
 
 ![The Login Screen](/assets/images/blog/kvm-and-cockpit/login.png){:width="600px"}
 
-We just need to provide our credentials on that machine. The `Resue my password for privileged tasks` option, as it suggests, makes the same credentials to be used for tasks such as installing updates, so we don't have to provide the same credentials again.
+We just need to provide our credentials on that machine. The `Reuse my password for privileged tasks` option, as it suggests, makes the same credentials to be used for tasks such as installing updates, so we don't have to provide the same credentials again.
 
 Once logged in, we can check the VM management interface where we can check information about our machines and change their state:
 
 ![The Virtual Machines Screen](/assets/images/blog/kvm-and-cockpit/vms.png)
 
-We can also create new virtual machines and access them through the "Consoles" tab:
+We can also create new virtual machines and access them through the **Consoles** tab:
 
 ![Create New VMs](/assets/images/blog/kvm-and-cockpit/new-vm.png){:width="600px"}
 
-It also provides a "Terminal" menu that gives us shell access to the host what can prove to be convenient.
+It also provides a **Terminal** menu that gives us shell access to the host what can prove to be convenient.
 
 # Impressions
 
@@ -149,9 +149,9 @@ That said, it seems enough for my home usage. It's nice to be able to have a gla
 
 # References
 
-* [https://help.ubuntu.com/community/KVM/Installation](https://help.ubuntu.com/community/KVM/Installation)
 * [https://computingforgeeks.com/how-to-install-cockpit-on-ubuntu-18-04-debian-9/](https://computingforgeeks.com/how-to-install-cockpit-on-ubuntu-18-04-debian-9/)
 * [https://cockpit-project.org/guide/latest/feature-virtualmachines](https://cockpit-project.org/guide/latest/feature-virtualmachines)
 * [htps://www.redhat.com/en/blog/managing-virtual-machines-rhel-8-web-console](htps://www.redhat.com/en/blog/managing-virtual-machines-rhel-8-web-console)
 
 [cockpit-url]: https://cockpit-project.org/
+[ubuntu-kvm-tutorial]: https://help.ubuntu.com/community/KVM/Installation
