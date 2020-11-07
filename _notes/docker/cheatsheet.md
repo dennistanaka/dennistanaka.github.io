@@ -38,6 +38,27 @@ List images (downloaded and built):
 $ docker image ls
 ```
 
+Build images:
+
+```bash
+# considering the Dockerfile is in the current folder
+$ docker build -t <image-name> .
+```
+
+Tag images to push to image registry:
+
+```bash
+# example for Docker Hub:
+$ docker tag <image-name> <docker-hub-user-id>/<image-name>
+```
+
+Login to image registry:
+
+```bash
+# example for Docker Hub:
+$ docker login
+```
+
 ### Running Containers
 
 ```bash
@@ -71,7 +92,7 @@ $ echo hello | docker run -i busybox cat
   hello
 ```
 
-Source: [StackOverflow](https://stackoverflow.com/questions/35459652/when-would-i-use-interactive-without-tty-in-a-docker-container)
+<span class="info-source">Source: [https://stackoverflow.com/questions/35459652/when-would-i-use-interactive-without-tty-in-a-docker-container](https://stackoverflow.com/questions/35459652/when-would-i-use-interactive-without-tty-in-a-docker-container)</span>
 
 ### Managing Containers
 
@@ -103,6 +124,12 @@ List all containers:
 
 ```bash
 $ docker container ls --all # or -a
+```
+
+Remove containers:
+
+```bash
+$ docker container rm <friendly-name|container-id>
 ```
 
 Create a container in a stopped state:
@@ -164,6 +191,8 @@ Run commands in a running container:
 $ docker exec <friendly-name|container-id> echo hello
 
 # interactive mode
+# -i: keep STDIN open - without this, we can't type any commands
+# -t: allocates a pseudo-terminal (TTY) - without this, the command prompt is not displayed
 $ docker exec -it <friendly-name|container-id> bash
 ```
 
@@ -266,4 +295,4 @@ $ docker container stop container_id
 
 ## Clean Up
 
-Source: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
+<span class="info-source">Source: [https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)</span>
