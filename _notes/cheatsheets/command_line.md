@@ -32,6 +32,74 @@ Left, Right Change to the pane above, below, to the left, or to the right of the
 
 <span class="info-source">Source: `man tmux`</span>
 
+## Search Files
+
+```bash
+# finds files by wildcard in the current directory
+$ find . -name "test*"
+```
+
+## Search Text
+
+```bash
+# basic search
+$ grep test /home/ubuntu
+$ grep "another test" /home/ubuntu
+$ grep test /home/ubuntu/*.sh
+
+# options:
+# -r: recursive (-R to follow symlinks)
+# -v: invert match
+# -i: case-insensitive
+# -w: full words
+
+# lines before and after a match
+$ grep -B 5 -A 5 test /home/ubuntu
+```
+
+<span class="info-source">[https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)</span>
+
+### Exclude Folders from Recursive Search
+
+```bash
+$ grep -r --exclude-dir=node_modules test app
+$ grep -r --exclude-dir={node_modules,vendor} test app
+```
+
+<span class="info-source">[https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r](https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r)</span>
+
+## Count Lines in File or Command Output
+
+```bash
+$ wc Gemfile
+54  277 1964 Gemfile
+```
+It returns lines (54), words(277) and bytes (1964). We can limit the results to something specific with the options below:
+
+```
+wc -l : Prints the number of lines in a file.
+wc -w : prints the number of words in a file.
+wc -c : Displays the count of bytes in a file.
+wc -m : prints the count of characters from a file.
+wc -L : prints only the length of the longest line in a file.
+```
+
+Counting the lines in a command output:
+
+```bash
+$ git clean -n | wc -l
+```
+
+<span class="info-source">Source: [https://www.tecmint.com/wc-command-examples/](https://www.tecmint.com/wc-command-examples/)</span>
+
+## Create Alias
+
+Add to ~/.bashrc:
+
+```bash
+alias k=kubectl
+```
+
 ## Find the Process Allocating a Specific Port
 
 ```bash
@@ -84,27 +152,3 @@ export HISTCONTROL=ignoreboth
 ```
 
 <span class="info-source">Source: [https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history](https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history)</span>
-
-## Count Number of Lines in File or Command Output
-
-```bash
-$ wc Gemfile
-54  277 1964 Gemfile
-```
-It returns lines (54), words(277) and bytes (1964). We can limit the results to something specific with the options below:
-
-```
-wc -l : Prints the number of lines in a file.
-wc -w : prints the number of words in a file.
-wc -c : Displays the count of bytes in a file.
-wc -m : prints the count of characters from a file.
-wc -L : prints only the length of the longest line in a file.
-```
-
-Counting the lines in a command output:
-
-```bash
-$ git clean -n | wc -l
-```
-
-<span class="info-source">Source: [https://www.tecmint.com/wc-command-examples/](https://www.tecmint.com/wc-command-examples/)</span>
