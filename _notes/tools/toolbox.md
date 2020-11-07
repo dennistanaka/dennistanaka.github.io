@@ -39,7 +39,7 @@ $ sudo snap install snap-store
 
 Install Lepton through the Snap Store.
 
-<span class="source-info">Source: [https://snapcraft.io/docs/installing-snap-store-app](https://snapcraft.io/docs/installing-snap-store-app)</span>
+<span class="info-source">Source: [https://snapcraft.io/docs/installing-snap-store-app](https://snapcraft.io/docs/installing-snap-store-app)</span>
 
 ## Config
 
@@ -151,7 +151,7 @@ I use VMware to run my VM, so the first thing I do is installing VMware Tools.
 
 4. Accept all the default prompts. Restart after the finish.
 
-Source: [https://kb.vmware.com/s/article/1018414](https://kb.vmware.com/s/article/1018414)
+<span class="info-source">Source: [https://kb.vmware.com/s/article/1018414](https://kb.vmware.com/s/article/1018414)</span>
 
 ## Docker
 

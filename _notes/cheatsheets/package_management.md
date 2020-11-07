@@ -8,6 +8,20 @@ permalink: /notes/cheatsheets/package_management/
 * TOC
 {:toc}
 
+## apt
+
+### Check Whether or Not a Package is Installed
+
+```bash
+$ dpkg --list qemu*
+...
+un  qemu-system-x86-64     <none>           <none>       (no description available)
+ii  qemu-utils             1:4.2-3ubuntu6.6 amd64        QEMU utilities
+```
+
+un: not installed
+ii: installed
+
 ## Homebrew
 
 ### List Installed Packages
@@ -43,15 +57,9 @@ We may need to use the options below depending on the package:
 $ brew link --force --overwrite package@5
 ```
 
-Source: [StackExchange](https://apple.stackexchange.com/questions/171530/how-do-i-downgrade-node-or-install-a-specific-previous-version-using-homebrew)
+<span class="info-source">Source: [https://apple.stackexchange.com/questions/171530/how-do-i-downgrade-node-or-install-a-specific-previous-version-using-homebrew](https://apple.stackexchange.com/questions/171530/how-do-i-downgrade-node-or-install-a-specific-previous-version-using-homebrew)</span>
 
-## Ruby and Gems
-
-### List Ruby Versions (rbenv)
-
-```bash
-$ rbenv versions
-```
+## Gems (Ruby)
 
 ### List Installed Gems
 
@@ -59,7 +67,7 @@ $ rbenv versions
 $ gem list
 ```
 
-## Python
+## pip (Python)
 
 ### List Installed Packages
 
@@ -67,7 +75,7 @@ $ gem list
 $ pip list
 ```
 
-## npm (packages.json)
+## npm (Node - packages.json)
 
 ### List Installed Packages (Global)
 
@@ -117,5 +125,4 @@ For example, these are all valid:
 }
 {% endhighlight %}
 
-Source: [npm Documentation](https://docs.npmjs.com/files/package.json#dependencies)
-
+<span class="info-source">Source: [https://docs.npmjs.com/files/package.json#dependencies](https://docs.npmjs.com/files/package.json#dependencies)</span>

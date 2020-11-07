@@ -3,6 +3,7 @@
     - cheatsheets/command_line
     - cheatsheets/curl
     - cheatsheets/package_management
+    - cheatsheets/version_management
     - cheatsheets/git
 - title: Tools
   notes:
