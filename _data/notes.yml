@@ -8,6 +8,7 @@
 - title: Tools
   notes:
     - tools/toolbox
+    - tools/virtualization
     - tools/code_editors
     - tools/boilerplates
     - tools/hosting
