@@ -166,3 +166,19 @@ Make the necessary configuration to run Docker commands without `sudo`:
 Then install Docker Compose following:
 
 [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+
+## Troubleshooting
+
+### Disable Tap to Click on Logitech K400 Plus
+
+This keyboard with a built-in trackpad works great overall, but I've had problems with its touchpad on Linux. First, its touchpad is recognized as a mouse. At least, on Pop_OS!, I needed to change my mouse settings to affect its behavior, instead of changing my touchpad settings. The tracking is not particularly great (not sure if due to the hardware or driver compatibility), but I feel things improved a bit after tweaking the mouse speed, enabling natural scrolling and disabling mouse acceleration.
+
+Another problem was that I could not find any way to disable the tap-to-click. I tend to hate tap-to-click functionality as I get more prone to making mistakes and, in this case of this keyboard, I feel it's even less necessary than usual because this has an exclusive left-click button in the top left corner that I find super comfortable to use. After researching a little bit about it, I found the article below:
+
+https://askubuntu.com/questions/227373/how-do-i-turn-off-tap-to-click-for-logitech-k400r-wireless-keyboard-with-touchpa
+
+In summary, we can disable tap-to-click functionality by simply doing:
+
+`Fn + Left-Click`
+
+After doing so, it's been great to use this keyboard. It also disable right-click on two-finger tap functionality what used to activate by mistake when I was doing two-finger scrolling.
