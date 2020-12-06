@@ -59,6 +59,13 @@ Login to image registry:
 $ docker login
 ```
 
+Push images to the registry:
+
+```bash
+# example for Docker Hub:
+$ docker push <docker-hub-user-id>/<image-name>
+```
+
 ### Running Containers
 
 ```bash
