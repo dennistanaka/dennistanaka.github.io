@@ -125,7 +125,7 @@ We can access Cockpit through the port 9090 on the host:
 
 https://ip-address:9090/
 
-Naturally, the browser will display a certification warning that can be safely skipped and, then, the login screen below will be displayed:
+The browser will display a warning since we are dealing with a self-signed certificate. I safely skipped it since I'm only accessing Cockpit on my local network. Then, the login screen is displayed:
 
 ![The Login Screen](/assets/images/blog/kvm-and-cockpit/login.png){:width="600px"}
 
@@ -146,6 +146,33 @@ It also provides a **Terminal** menu that gives us shell access to the host what
 For my impressions, at least in terms of virtual machine management, Cockpit certainly feels lacking for now and development doesn't seem to be that fast. If it was not for my goal of knowing more about KVM it would probably not make that much sense.
 
 That said, it seems enough for my home usage. It's nice to be able to have a glance on the existing virtual machines as it gives visibility on what is going on in the host. I will probably not use much of its features outside managing virtual machines, but being able to do simple checks and management tasks from a web interface is very convenient.
+
+# Edits
+
+## Session Timeout
+
+###### December 6th, 2020
+
+Cockpit automatically log us out after 15 minutes of inactivity. We can configure this session timeout, in minutes, by editing the `/etc/cockpit/cockpit.conf` file (it may be necessary to create it) with a content like the following:
+
+```
+[Session]
+IdleTimeout=180
+```
+
+<span class="info-source">Source: https://cockpit-project.org/blog/cockpit-209.html</span>
+
+## Update from Backports
+
+###### December 6th, 2020
+
+As of now, 215 is the most recent version of Cockpit available in the Ubuntu 20.04 repositories, even though the most recent version of the application itself is 233. To update to a more recent version, the easiest way is to install the version (currently 231) from the Backports repository. I use the command below to update the Cockpit's version and resolve its dependencies from Backports:
+
+```bash
+sudo apt install -t focal-backports cockpit cockpit-machines
+```
+
+<span class="info-source">Source: <https://help.ubuntu.com/community/UbuntuBackports#Using_Backports></span>
 
 # References
 
