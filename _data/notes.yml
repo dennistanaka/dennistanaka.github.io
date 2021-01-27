@@ -1,6 +1,7 @@
 - title: Cheat Sheets
   notes:
     - cheatsheets/command_line
+    - cheatsheets/bash_scripting
     - cheatsheets/curl
     - cheatsheets/package_management
     - cheatsheets/version_management
@@ -14,8 +15,9 @@
     - tools/hosting
 - title: Docker
   notes:
-    - docker/cheatsheet
     - docker/basics
+    - docker/cheatsheet
+    - docker/compose
 - title: Guidelines
   notes:
     - guidelines/apis
