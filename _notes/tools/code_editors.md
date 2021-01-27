@@ -103,10 +103,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 Options:
 
-`-f`: (HTTP) Fail silently (no output at all) on server errors.
-`-L`: (HTTP) If the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.
-`-o`: Write output to <file> instead of stdout.
-`--create-dirs`: When used in conjunction with the -o, --output option, curl will create the necessary local directory hierarchy as needed.
+`-f`: (HTTP) Fail silently (no output at all) on server errors.<br>
+`-L`: (HTTP) If the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.<br>
+`-o`: Write output to <file> instead of stdout.<br>
+`--create-dirs`: When used in conjunction with the -o, --output option, curl will create the necessary local directory hierarchy as needed.<br>
 
 Edit `~/.vimrc` and add a section like the below:
 
