@@ -8,6 +8,8 @@ permalink: /notes/cheatsheets/curl/
 * TOC
 {:toc}
 
+Work in progres...
+
 ```bash
 $ curl -o app/assets/images/banner.png -OL https://cdn.somecdnservicedomain.com/banner.png
 ```

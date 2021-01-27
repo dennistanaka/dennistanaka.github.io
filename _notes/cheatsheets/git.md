@@ -20,7 +20,7 @@ $ git config --global user.email "YOUR@EMAIL.com"
 
 ## Display Branch in Terminal
 
-Add to ~/.bash_rc (or ~/.bash_profile):
+Add to `~/.bash_rc` (or `~/.bash_profile`):
 
 ```shell
 # Git branch in prompt.
