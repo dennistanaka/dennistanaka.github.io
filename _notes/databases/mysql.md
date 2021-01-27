@@ -8,6 +8,25 @@ permalink: /notes/databases/mysql/
 * TOC
 {:toc}
 
+## Age Calculation
+
+There are a couple of ways to do this, but this is the way we can find in the MySQL documentation and a very simple one:
+
+```sql
+SELECT
+  name,
+  birth,
+  CURDATE(),
+  TIMESTAMPDIFF(YEAR,birth,CURDATE()) AS age
+FROM
+  pet;
+```
+
+<span class="info-source">Source:</span>
+* <span class="info-source"><https://stackoverflow.com/questions/2533890/how-to-get-an-age-from-a-d-o-b-field-in-mysql></span>
+* <span class="info-source"><https://qiita.com/sunnyG/items/eb09370b1f4265aa4503></span>
+* <span class="info-source"><https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/date-calculations.html></span>
+
 ## Backup & Restore
 
 ### Backup
