@@ -22,6 +22,61 @@ ii  qemu-utils             1:4.2-3ubuntu6.6 amd64        QEMU utilities
 un: not installed<br>
 ii: installed
 
+## pacman
+
+### Update the Database
+
+```bash
+$ sudo pacman -Sy
+# S: sync to the master package database
+# y: refresh the local copy of the master package database
+```
+
+Or
+
+```bash
+$ sudo pacman -Syy
+```
+
+to force pacman to update the package database by recreating it.
+
+### Search for Packages
+
+```bash
+$ pacman -Ss <search_term>
+```
+
+### Install Packages
+
+```bash
+$ sudo pacman -S <package_name_1> <package_name_2>
+```
+
+### Upgrade Packages
+
+```bash
+$ sudo pacman -Syu
+```
+
+### Remove Packages
+
+Only the package preserving its dependencies:
+
+```bash
+$ sudo pacman -R <package_name>
+```
+
+Remove package with dependencies not required by any other package:
+
+```bash
+$ sudo pacman -Rs <package_name>
+```
+
+<span class="info-source">Source:</span>
+* <span class="info-source"><https://itsfoss.com/pacman-command/></span>
+* <span class="info-source"><https://linuxhint.com/pacman_arch_linux/></span>
+* <span class="info-source"><https://www.digitalocean.com/community/tutorials/how-to-use-arch-linux-package-management></span>
+
 ## Homebrew
 
 ### List Installed Packages
