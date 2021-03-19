@@ -1,31 +1,12 @@
 ---
-menu_title: Code Editors
-title: Tools - Code Editors
-permalink: /notes/tools/code_editors/
+menu_title: Vim
+title: Tools - Vim
+permalink: /notes/tools/vim/
 ---
 
 <h4>Table of Contents</h4>
 * TOC
 {:toc}
-
-## Visual Studio Code
-
-### Extensions
-
-#### [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
-
-* SQL Format (Beautifier)
-  * Win/Linux: Ctrl + E, Ctrl + B
-  * OSX: Cmd + E, Cmd + B
-  * or using the standard VSCode Format Document/selection
-
-#### [JSON Tools](https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools)
-
-* JSON Format (Beautifier)
-  * Ctrl(Cmd) + Alt + M
-
-* JSON Minify
-  * Alt + M
 
 ## Vim
 
@@ -35,45 +16,85 @@ permalink: /notes/tools/code_editors/
 
 | Action | Command |
 | ------ | ------- |
-| Open | vi *filename* |
-| Quit (no changes made) | :q + Enter |
-| Quit (ignore changes) | :q! + Enter |
-| Save | :w + Enter |
-| Save and Quit | :wq + Enter |
+| Open | `vim` *filename* |
+| Open file | `:e` *filename* |
+| Quit (no changes made) | `:q` |
+| Quit (ignore changes) | `:q!` |
+| Save | `:w` |
+| Save and quit | `:wq` |
+
+#### Screen Management
+
+| Action | Command |
+| ------ | ------- |
+| List buffers | `:ls` |
+| Previous/next buffer | `:bp` / `:bn` |
+| Close buffer | `:bd` |
+| Open file splitting horizontally | `:sp` *filename* |
+| Open file splitting vertically | `:svp` *filename* |
+| Split horizontally | `Ctrl` + `w`, `s` |
+| Split vertically | `Ctrl` + `w`, `v` |
+| Switch window | `Ctrl` + `w`, `w` |
+| Switch to left, down, up, right window | `Ctrl` + `w` + `h`, `j`, `k`, `l` |
+| Quit window | `Ctrl` + `w`, `q` |
+
+#### Tab Management
+
+| Action | Command |
+| ------ | ------- |
+| Open file in new tab | `:tabedit` *filename* |
+| List tabs | `:tabs` |
+| Previous/next tab | `gT` / `gt` |
+| Close tab | `:tabclose` |
 
 #### Cursor
 
 | Action | Command |
 | ------ | ------- |
-| Move | Arrow Keys |
-| Start of the Line | 0 |
-| End of the Line | $ |
-| Next Word | w |
-| Previous Word | b |
-| First Line | :0 + Enter |
-| Nth Line | :n + Enter |
-| Last Line | :$ + Enter |
+| Move cursor | Arrow keys (left, down, up, right) or `h`, `j`, `k`, `l` |
+| Move cursor to top/middle/bottom of screen | `H` / `M` / `L` |
+| Previous/next word | `b` / `w` |
+| End of word | `e` |
+| Start/end of line | `0` or `^` / `$` |
+| Previous/next sentence | `(` / `)` |
+| Previous/next block of text | `{` / `}` |
+| Previous/next page | `Ctrl` + `b` / `Ctrl` + `f` |
+| Start/end of file | `gg` / `G` |
+| First line | `:0` |
+| Nth line | `:`*N* |
+| Last line | `:$` |
 
 #### Text Manipulation
 
 | Action | Command |
 | ------ | ------- |
-| UNDO | u |
-| REDO | Ctrl + r |
-| Edit Text | i |
-| Delete Line from Cursor | D |
-| Delete Line | dd |
-| Copy Line | yy |
-| Copy Multiple Lines | *N*yy |
-| Past Line | p |
+| UNDO | `u` |
+| REDO | `Ctrl` + `r` |
+| Repeat last action | `.` |
+| Edit text | `i` |
+| Highlight characters | `v` |
+| Highlight lines | `V` |
+| Copy word | `yw` |
+| Copy line | `yy` |
+| Copy multiple lines | *N*`yy` |
+| Delete word | `dw` |
+| Delete line | `dd` |
+| Delete line from cursor | `D` |
+| Delete highlighted text | `d` |
+| Delete from cursor to | `d0` (beginning of line), `dgg` / `dG` (beginning/end of file) |
+| Paste line | `p` |
 
 #### Text Searching
 
 | Action | Command |
 | ------ | ------- |
-| Search Text | /*string* |
-| Next Occurrence | n |
-| Previous Occurrence | N |
+| Search text | /*string* |
+| Next occurrence | `n` |
+| Previous occurrence | `N` |
+| Replace pattern without confirming | `%s/`*pattern*`/`*replacement*`/g` |
+| Replace pattern confirming each time | `%s/`*pattern*`/`*replacement*`/gc` |
+
+<span class="info-source">Source: <https://www.keycdn.com/blog/vim-commands></span>
 
 ### Recommended Configuration
 
@@ -164,5 +185,3 @@ Plug 'itchyny/lightline.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 ```
-
-

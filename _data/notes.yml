@@ -10,7 +10,8 @@
   notes:
     - tools/toolbox
     - tools/virtualization
-    - tools/code_editors
+    - tools/vscode
+    - tools/vim
     - tools/boilerplates
     - tools/hosting
 - title: Docker
