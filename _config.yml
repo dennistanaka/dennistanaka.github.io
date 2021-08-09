@@ -43,7 +43,7 @@ plugins:
 #   - vendor/ruby/
 
 header_pages:
-  - portfolio.md
+  # - portfolio.md
   - blog.md
   - notes.md
   - profile.md
