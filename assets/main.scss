@@ -66,6 +66,7 @@ code {
   @include relative-font-size(0.7775);
   background-color: $accent-bg-color;
   font-family: $code-font-family;
+  font-size: $code-font-size;
 
   .c {
     display: inline-block;
@@ -194,13 +195,17 @@ code {
 .notes-navigation {
   margin-top: -12px;
 
-  a { color: $text-color; }
+  a {
+    font-family: "Inter";
+    color: $grey-color;
+  }
 
   li {
     margin-left: $spacing-unit / 2;
   }
 
-  .current {
+  .current > a {
+    color: $text-color;
     text-decoration: underline;
   }
 
@@ -211,7 +216,6 @@ code {
 
 .mobile-notes-navigation {
   display: none;
-  font-family: "Noto Sans";
 
   @include media-query($on-laptop) {
     display: block;
@@ -226,6 +230,15 @@ code {
     margin-left: $spacing-unit;
   }
 
+  .current {
+    text-decoration: underline;
+    color: $text-color;
+  }
+
+  .current > a {
+    color: $text-color;
+  }
+
   @include media-query($on-laptop) {
     display: block;
 
@@ -238,13 +251,13 @@ code {
       margin-left: $spacing-unit / 2;
 
       a {
-        font-family: "Noto Sans";
         font-size: 1rem;
+        color: $grey-color;
       }
     }
 
-    .current {
-      text-decoration: underline;
+    .current > a {
+      color: $text-color;
     }
   }
 }

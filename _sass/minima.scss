@@ -2,11 +2,12 @@
 
 // Define defaults for each variable.
 
-$head-font-family: "Noto Sans", -apple-system, ".SFNSText-Regular", BlinkMacSystemFont, "San Francisco", "Roboto", "Segoe UI", "Ubuntu", "Cantarell", "Oxygen", "Fira Sans", "Helvetica Neue", "Droid Sans", "Lucida Grande", sans-serif !default;
-$base-font-family: "Source Serif Pro", "Times", "Noto Serif", "Georgia", "Droid Serif", "Times New Roman", serif !default;
+$head-font-family: "Inter", -apple-system, ".SFNSText-Regular", BlinkMacSystemFont, "San Francisco", "Roboto", "Segoe UI", "Ubuntu", "Cantarell", "Oxygen", "Fira Sans", "Helvetica Neue", "Droid Sans", "Lucida Grande", sans-serif !default;
+$base-font-family: "Inter", "Times", "Noto Serif", "Georgia", "Droid Serif", "Times New Roman", serif !default;
 $code-font-family: "Roboto Mono", "Monaco", "Consolas", "Ubuntu Mono", "Oxygen Mono", "Fira Mono", "Menlo", "Droid Sans Mono", "Lucida Console", monospace !default;
-$base-font-size:   18px !default;
-$base-font-weight: 400 !default;
+$base-font-size:   16px !default;
+$base-font-weight: 200 !default;
+$code-font-size:   13px !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
