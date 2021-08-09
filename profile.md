@@ -6,15 +6,8 @@ permalink: /profile/
 
 # Profile
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm an IT professional currently living in Japan.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I've spent most of my career working with systems analysis and software development on industries such as health care and banking.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+In my free time, I like to spend time with my family, draw and consume japanese entertainment (you know, music, anime and so on).
