@@ -16,9 +16,7 @@
 title: Dennis Tanaka
 email: me@dennistanaka.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Seasoned IT professional with experience in systems analysis and software development. Most recently, I've worked with Golang, Ruby on Rails and Vue in terms of programming tools. I had also the opportunity to experience technologies such as Serverless Computing and Kubernetes. My current goals includes improving my management skills and learning more about DevOps and SRE.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  dennistanaka
