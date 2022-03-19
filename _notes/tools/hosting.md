@@ -23,3 +23,24 @@ permalink: /notes/tools/hosting/
 * [Heroku](https://www.heroku.com/home)
   * Pricing: [https://www.heroku.com/pricing](https://www.heroku.com/pricing)
   * Free-Tier: []()
+
+### Google Cloud Platform (GCP)
+
+#### Show Active Project
+
+```bash
+$ gcloud config get-value project
+```
+
+<span class="info-source">Source: <https://stackoverflow.com/questions/63041888/how-to-check-which-gcloud-project-is-active></span>
+
+#### List Resources
+
+```bash
+$ gcloud beta asset search-all-resources  --scope='projects/project123'
+```
+
+<span class="info-source">Source:</span>
+* <span class="info-source"><https://stackoverflow.com/questions/58102443/using-gcloud-to-list-all-active-resources-under-a-given-gcp-project></span>
+* <span class="info-source"><https://cloud.google.com/sdk/gcloud/reference/beta/asset/search-all-resources></span>
+

@@ -180,6 +180,12 @@ Show the logs output by a container:
 $ docker logs <friendly-name|container-id>
 ```
 
+Show the running containers along with the user who started each one:
+
+```bash
+$ docker inspect $(docker ps -q) --format '{{.Config.User}} {{.Name}}'
+```
+
 ### Running Applications
 
 Run processes in the foreground:
