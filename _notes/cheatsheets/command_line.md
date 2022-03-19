@@ -37,6 +37,18 @@ Left, Right Change to the pane above, below, to the left, or to the right of the
 ```bash
 # finds files by wildcard in the current directory
 $ find . -name "test*"
+
+# find only folders that were modified more than 30*24 hours ago
+$ find . -type d -mtime +30
+```
+
+Act on the results of `find`:
+
+```bash
+# Removes the files found (-i prompts before removal)
+# {} is a placeholder representing each result of the find command
+# \; is just a delimiter indicating the end of the command passed to -exec
+$ find . -name "test*" -exec rm -i {} \;
 ```
 
 ## Search Text
