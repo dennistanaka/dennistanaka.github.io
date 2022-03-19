@@ -58,8 +58,20 @@ Three or more hyphens:
 
 ## Sources
 
-
-
-```bash
+```markdown
 <span class="info-source">Source: <https://www.google.com/></span>
 ```
+
+<span class="info-source">Source: <https://www.google.com/></span>
+
+## Table of Contents
+
+```markdown
+<h4>Table of Contents</h4>
+* TOC
+{:toc}
+```
+
+<h4>Table of Contents</h4>
+* TOC
+{:toc}
