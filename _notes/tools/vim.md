@@ -59,6 +59,7 @@ permalink: /notes/tools/vim/
 | Previous/next sentence | `(` / `)` |
 | Previous/next block of text | `{` / `}` |
 | Previous/next page | `Ctrl` + `b` / `Ctrl` + `f` |
+| Scroll the window up/down | `Ctrl` + `y` / `Ctrl` + `e` |
 | Start/end of file | `gg` / `G` |
 | First line | `:0` |
 | Nth line | `:`*N* |

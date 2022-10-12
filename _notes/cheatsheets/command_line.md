@@ -19,6 +19,7 @@ $           Rename the current session.
 d           Detach the current client.
 
 c           Create a new window.
+,           Rename the current window.
 l           Move to the previously selected window.
 n           Change to the next window.
 0 to 9      Select windows 0 to 9.
@@ -164,3 +165,21 @@ export HISTCONTROL=ignoreboth
 ```
 
 <span class="info-source">Source: [https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history](https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history)</span>
+
+
+
+## Log Analysis
+
+```bash
+$ tail -n 100000 access.log | grep status:499 | awk '{ print $2 }' | sort | uniq -c | awk '{ print $1, $2 }' | sort -nr | head -n 30
+$ tail -n 100000 access.log | grep status:499 | awk '{ print $(NF) }' | cut -d ':' -f 2 | sort -nr | head -n 100
+```
+
+- https://www.tecmint.com/count-word-occurrences-in-linux-text-file/
+- https://fedingo.com/how-to-extract-ip-address-from-log-file/
+- https://linuxhint.com/sort-command-in-linux-with-examples/#:~:text=SORT%20command%20in%20Linux%20is,come%20before%20the%20alphabetic%20lines.
+- https://linuxize.com/post/linux-wc-command/
+- https://stackoverflow.com/questions/380817/best-way-to-simulate-group-by-from-bash
+- https://stackoverflow.com/questions/918886/how-do-i-split-a-string-on-a-delimiter-in-bash
+- https://linuxhint.com/awk_print_last_column_file/
+
